@@ -12,7 +12,7 @@ node {
 
    stage ('archival') {
      // archiving artifacts
-	 archive 'target/*.jar'
+	 archiveArtifacts artifacts: '/target/*.jar'
    }
 
 }
