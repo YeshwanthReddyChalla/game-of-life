@@ -12,7 +12,7 @@ node {
 
    stage ('archival') {
      // archiving artifacts
-	 archiveArtifacts artifacts: '/target/*.jar'
+	 archiveArtifacts artifacts: 'gameoflife-core//target/*.jar'
    }
 
 }
