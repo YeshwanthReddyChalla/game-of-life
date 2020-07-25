@@ -2,7 +2,7 @@ node {
 
    stage('SCM') {
       // git clone
-	  git git 'https://github.com/YeshwanthReddyChalla/game-of-life'
+	  git 'https://github.com/YeshwanthReddyChalla/game-of-life'
    }
    
    stage ('build the packages') {
