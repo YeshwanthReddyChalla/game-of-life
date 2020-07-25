@@ -2,7 +2,7 @@ node {
 
    stage('SCM') {
       // git clone
-	  git 'https://github.com/YeshwanthReddyChalla/game-of-life'
+	  git 'https://github.com/YeshwanthReddyChalla/game-of-life.git'
    }
    
    stage ('build the packages') {
@@ -10,11 +10,10 @@ node {
 	  sh 'mvn package'
    }
 
-   
-   
    stage ('archival') {
      // archiving artifacts
 	 archive 'target/*.jar'
    }
 
 }
+
